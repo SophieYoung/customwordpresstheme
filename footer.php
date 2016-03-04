@@ -1,6 +1,14 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="wrapper">
+    <p>&copy; Copyright: Peyton Progres <?php echo date('Y'); ?></p>
+  
+    <?php wp_nav_menu(array(
+    	'theme_location'=> 'social',
+    	'container' => 'false'
+
+    )); ?>
+
+
   </div>
 </footer>
 

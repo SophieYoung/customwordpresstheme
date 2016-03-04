@@ -17,22 +17,22 @@
   <div class="wrapper">
       
     <nav>
-     <!--    NAVIGATION MENU -->
-      <div class="navigationBar">
-        <!--  LOGO -->
-        <div class="logo"></div>
+    <!--   <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home"> -->
+    
+    <div class="logo"> LOGO <!-- <h1> <?php bloginfo( 'name' ); ?> </h1> --></div>
 
+   <!--    </a> -->
+    <div class="nav">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+    </div>
 
-         <?php wp_nav_menu( array(
-            'container' => false,
-            'theme_location' => 'primary'
-          )); ?>
-      </div><!--navigationBar ends-->
-
-       <!--  PROGRESS BAR -->
-       <div class="progressBar">
-            <progress value="0"></progress> 
-        </div>
+    
+     <div class="progressBar">
+          <progress value="0"></progress> 
+      </div>
     </nav>
   
  
