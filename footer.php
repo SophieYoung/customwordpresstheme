@@ -1,16 +1,21 @@
 <footer>
   <div class="wrapper">
-    <p>&copy; Copyright: Peyton Progres <?php echo date('Y'); ?></p>
-  
+   
     <?php wp_nav_menu(array(
     	'theme_location'=> 'social',
     	'container' => 'false'
-
     )); ?>
 
+ 	<p class"copyWright">&copy; InSepia <?php echo date('Y'); ?></p>
+
+	
+	<ul class="xoxo">
+		<?php  dynamic_sidebar( 'primary-widget-area' ); ?>
+	</ul>
 
   </div>
 </footer>
+
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php

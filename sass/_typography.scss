@@ -3,10 +3,10 @@
 }
 
 a {
-	color: #BA209B;
+	color: #ff0000;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: #990000;
 	}
 }
 
@@ -99,4 +99,12 @@ img {
 	width: 100%;
 	float: left;
 	clear: both;
+}
+
+.entry-title {
+	margin:2rem;
+}
+
+.entry-content > p {
+	margin:2rem;
 }

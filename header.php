@@ -20,7 +20,8 @@
      <!--    NAVIGATION MENU -->
       <div class="navigationBar">
         <!--  LOGO -->
-        <div class="logo"></div>
+        <div class="logo">
+        </div>
 
 
          <?php wp_nav_menu( array(

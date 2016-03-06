@@ -2,7 +2,7 @@
 
 <div class="main">
   <div class="container">
-    <div class="content">
+    <div class="content-full">
 
       <?php if ( have_posts() ) the_post(); ?>
 

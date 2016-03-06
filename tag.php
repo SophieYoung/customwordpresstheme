@@ -3,7 +3,7 @@
 <div class="main">
   <div class="container">
 
-    <div class="content">
+    <div class="content-full">
       <h1>Tag Archives: <?php single_tag_title(); ?></h1>
       <?php get_template_part( 'loop', 'tag' ); ?>
     </div> <!-- /.content -->

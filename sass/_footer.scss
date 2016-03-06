@@ -1,3 +1,87 @@
 footer {
 	clear: both;
+	max-width: 1200px;
+	margin: 0 auto;
+	border-top: 1px solid black;
+}
+
+ footer .wrapper {
+	margin:2rem;
+}
+
+ ul {
+ 	list-style: none;
+ 	margin:0;
+ }
+
+#menu-social-media {
+	float:right;
+	margin:0;
+}
+
+// ====================================
+// DYNAMIC WIDGET STYLES
+// ====================================
+.xoxo  {
+	float: right;
+}
+
+
+input[type=submit].searchsubmit {
+	background-color:black;
+	border: 1px solid black;
+	border-radius:2px;
+	color:white;
+	background-image: url("images/search.png");
+	background-repeat:no-repeat;
+	// background-image-size:100%;
+	margin:-5px 0 0 -3px;
+	background-position:center;
+	width: 30px;
+	background-size:20px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.searchsubmit {
+	padding-top: 10px;
+}
+
+input[type=search] {
+	height: 30px;
+	height: 100%;
+	padding:5px;
+	margin:0;
+	border: 1px solid black;
+}
+
+.search {
+	height: 30px;
+	margin:0;
+	padding:0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+// ====================================
+// MEDIA STYLES
+// ====================================
+@media (max-width:550px){
+	.xoxo  {
+	float: center;
+	padding-bottom: 10px;
+}
+
+ul.xoxo {
+	margin-left:-30px;
+}
+
 }

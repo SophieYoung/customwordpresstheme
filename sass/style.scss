@@ -13,6 +13,9 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+$blue: #4682B4;
+$red: #ff0000;
+$darkred: #990000;
 /*
 ====================================
 Default Styling
@@ -20,7 +23,7 @@ Default Styling
 */
 
 img {
-	max-width: 100%;
+	// max-width: 100%;
 }
 
 body {
@@ -32,11 +35,11 @@ body {
 	margin: 0 auto;
 }
 
-.content {
+.content-full {
 	float: left;
 	width: 100%;
 	margin-right: 5%;
-	padding: 0;
+	padding: 10px 0 0 0;
 	img {
 		width:100%;
 		height: auto;
@@ -78,30 +81,26 @@ nav {
 	padding:0;
 	margin:0;
 	background-color: white;
+	top:0;
+	z-index:100;
 }
 
 .logo {
-	background-image: url("images/logo.png");
+	background-image: url("images/logo.svg");
 	background-repeat:no-repeat;
-	background-size: 90%;
 	width:300px;
 	height:43px;
 	line-height: 300px;
 	display: inline-block;
-
-	// position: fixed;
 }
-
 
 .navigationBar {
 	display: flex;
 	max-width:1200px;
 	width:100%;
-	padding: 0 5% 0 1%;
+	padding: 9px 60px 0 10px;
 	justify-content:space-between;
 }
-
-
 
 .progressBar {
 	position: relative;
@@ -111,7 +110,7 @@ nav {
 	margin:0;
 }
 
-.progressBar >p{
+.progressBar >p {
 	position:fixed;
 	top:0;
 	left:0;
@@ -176,11 +175,107 @@ progress > p {
 }
 
 // ====================================
-// FOOTER STYLES
+// CONTACT STYLES
 // ====================================
+.content {
+	// float: left;
+	width: 100%;
+	// margin-right: 5%;
+	padding: 0;
+	img {
+		height: auto;
+	}
+}
 
-input[type=submit] {
-	background-color:pink;
+.contactHeader {
+	text-align:center;
+	margin: 70px 0px 0px 0px;
+}
+
+.form {
+	transform: translate(33%, 0);	
+	width: 100%;
+
+	input[type=submit] {
+		background-color:$red;
+		border: 1px solid $red;
+		border-radius:3px;
+		color:white;
+		margin:0;
+		padding:0.3rem 1rem;
+		box-shadow: 0px 4px 0px $darkred;
+	}
+	input[type=submit]:hover {
+		background-color:$darkred;
+		border: 1px solid $darkred;
+	}
+}
+
+	input[type=email], input[type=text], textarea {
+		width: 300px;
+		border-radius: 3px;
+		// border:grey;
+		}
+
+	@media (max-width: 900px) {
+		.content {
+		transform: translate(20%, 0);	
+		}
+
+	@media (max-width: 650px)  {
+		.content, .form {
+			transform: translate(0, 0);	
+		}
+
+		.form {
+			padding-left:1rem;
+			width: 100%;
+		
+		}
+
+	}
+
+		
+	}
+
+// ====================================
+// LOOP STYLES
+// ====================================
+h2.entry-title {
+	text-align:center;
+	padding-top: 10px;
+}
+
+// ====================================
+// LOST STYLES
+// ====================================
+.lost-box{
+max-width: 1200px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	        text-align: center;
+}
+.lost {
+	padding: 3rem;
+;
+}
+.lost > h1 {
+	font-size: 5rem;
+	
+}
+
+.lost > p {
+
+
 }
 
 
@@ -189,30 +284,18 @@ input[type=submit] {
 // ====================================
 // MEDIA STYLES
 // ====================================
-// @media (max-width:550px){
-// 	.progressBar {
-// 		display:none;
-// 	}
-// 	.mobileProgressBar {
-// 		height: 30px;
-// 		background-color: pink;
-// 		width:100%;
-// 		padding:0;
-// 		margin:0;
-// 		bottom:0;
-// 		display:none;
-// 		position:fixed;
-// 	}
+@media (max-width:550px){
+.navigationBar {
+	padding: 5px 0 0 6px;
+	justify-content:space-between;
+}
 
-// 	.mobileProgressBar {
-// 		display:block;
-// 	}
+.logo {
+	padding-top: 8px;
+}
 
-// 	.mobileProgressBar > progress {
+	}
 
-
-// 	}
-// }
 
 
 
